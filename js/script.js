@@ -33,9 +33,14 @@ function restart(){
         let minute = Number(minutes.innerText)
         second--
         if(second===(-1)){
+            if(minute===0){
+                clearInterval(timer)
+                return 0
+            }
             second=59
             minute--
             minutes.innerText=minute
+            
         }
         seconds.innerText=addZero(second)
     }, 1000)
