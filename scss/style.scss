@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    flex-direction: column;
+    background: #1E213F;
+    font-family: Kumbh Sans;
+    h1{
+        margin: 48px 0 55px 0;
+        color: #D7E0FF;
+        font-size: 32px;
+    }
+    ul{
+        position: relative;
+        list-style: none;
+        padding: 7px;
+        border-radius: 31.5px;
+        background: #161932;
+        margin-bottom: 45px;
+        li{
+            color: #D7E0FF;
+            border-radius: 26.5px;
+            width: 120px;
+            height: 48px;
+            opacity: 0.4000000059604645;
+            cursor: pointer;
+            &:first-child{
+                background: #F87070;
+                color: #1E213F;
+                opacity: 1;
+            }
+        }
+    }
+    .circle{
+        width: 410px;
+        height: 410px;
+        border-radius: 50%;
+        background: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
+        box-shadow: 50px 50px 100px 0px #121530, -50px -50px 100px 0px #272C5A;
+        .back{
+            width: 366px;
+            height: 366px;
+            border-radius: 50%;
+            background: #161932;
+            .border{
+                border-radius: 50%;
+                width: 339px;
+                height: 339px;
+                background: #F87070;
+                .timeBack{
+                    flex-direction: column;
+                    border-radius: 50%;
+                    width: 322px;
+                    height: 322px;
+                    background: #161932;
+                    color: #D7E0FF;
+                    .time{
+                            font-size: 100px;
+                            letter-spacing: -5px;
+                    }
+                    span{
+                        cursor: pointer;
+                        margin-top: 19px;
+                        padding-left: 15px;
+                        font-size: 16px;
+                        letter-spacing: 15px;
+                        :hover{
+                            color: #F87070;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    img{
+        margin-top: 63px;
+    }
+}
